@@ -1,0 +1,22 @@
+{
+  "env": {
+    "MONGODB_URI": "@mongodb_uri_twitter_clone"
+  },
+  "routes": [
+    {
+      "src": "/",
+      "methods": ["GET"],
+      "dest": "/api/getTweets.js"
+    },
+    {
+      "src": "/tweets",
+      "methods": ["GET"],
+      "dest": "/api/getTweets.js"
+    },
+    {
+      "src": "/tweets",
+      "methods": ["POST"],
+      "dest": "/api/createTweet.js"
+    }
+  ]
+}
