@@ -5,7 +5,7 @@
   "routes": [
     {
       "src": "/",
-      "methods": ["*"],
+      "methods": ["GET"],
       "dest": "/api/getTweets.js"
     },
     {
